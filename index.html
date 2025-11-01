@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Animated Magic with CSS & JS</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <header class="text-center">
+      <h1>Magic in Motion</h1>
+      <p class="subtitle">CSS animations meet JavaScript superpowers</p>
+    </header>
+
+    <!-- Part 1: CSS Animations Showcase -->
+    <section class="section" id="css-animations">
+      <h2>CSS3 Animations & Transitions</h2>
+
+      <div class="card-grid">
+        <!-- Hover Button -->
+        <div class="card">
+          <h3>Hover Me</h3>
+          <button class="fancy-btn">Pulse!</button>
+        </div>
+
+        <!-- Auto Spinner -->
+        <div class="card">
+          <h3>Auto Spin</h3>
+          <div class="spinner"></div>
+        </div>
+
+        <!-- Fade In Text -->
+        <div class="card fade-in">
+          <h3>Fade In</h3>
+          <p>This card fades in when you scroll to it!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Part 2 & 3: JS-Controlled Animations -->
+    <section class="section" id="js-animations">
+      <h2>JavaScript-Powered Animations</h2>
+
+      <!-- Card Flip -->
+      <div class="flip-container">
+        <div class="flip-card" id="flip-card">
+          <div class="front">
+            <h3>Click to Flip</h3>
+            <p>I'm the front!</p>
+          </div>
+          <div class="back">
+            <h3>Surprise!</h3>
+            <p>Now I'm the back!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Animated Box -->
+      <div class="animation-controls">
+        <h3>Animate the Box</h3>
+        <div class="box" id="anim-box"></div>
+        <div class="btn-group">
+          <button id="btn-bounce">Bounce</button>
+          <button id="btn-slide">Slide</button>
+          <button id="btn-spin">Spin</button>
+          <button id="btn-reset">Reset</button>
+        </div>
+      </div>
+
+      <!-- Loading Modal -->
+      <div class="modal-controls">
+        <h3>Simulate Loading</h3>
+        <button id="show-modal">Start Loading</button>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal-overlay" id="modal">
+        <div class="modal-content">
+          <div class="loader"></div>
+          <p id="loading-text">Processing your request...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Calculator Demo (Scope & Functions) -->
+    <section class="section" id="js-functions">
+      <h2>Reusable JS Functions</h2>
+      <div class="calculator">
+        <h3>Quick Math Calculator</h3>
+        <input type="number" id="num1" placeholder="Number 1" />
+        <input type="number" id="num2" placeholder="Number 2" />
+        <div class="btn-group">
+          <button id="add-btn">+</button>
+          <button id="multiply-btn">×</button>
+          <button id="power-btn">^</button>
+        </div>
+        <p class="result" id="result">Result: -</p>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
